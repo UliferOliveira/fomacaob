@@ -82,15 +82,15 @@ function mostraPergunta() {
     mostraAlternativas();
 }
 
-function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativas) {
-        const botaoAlternativa = document.createElement("button");
-        botaoAlternativa.textContent = alternativa.text;
-        botaoAlternativa.addEventListener("click", function() {
+function mostraAlternativas() {
+    for (const alternativa of perguntaAtual.alternativas) {
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa.text;
+        botaoAlternativas.addEventListener("click", function() {
             atual++;
             mostraPergunta();
         })
-        caixaAlternativas.appendChild(botaoAlternativa);
+        caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
 mostraPergunta();
