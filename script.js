@@ -76,7 +76,7 @@ const perguntas = [
 let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
-
+function exibir primeiraPergunta();
 function mostraPergunta() {
    if (atual >= perguntas.lenght) {
     mostraResultado();
